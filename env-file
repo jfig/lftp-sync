@@ -1,0 +1,6 @@
+DIRECTION=upload
+FTP_USER=your_username
+FTP_PASS=your_password
+FTP_HOST=ftps://someserver.com
+FTP_SOURCE=/sync
+FTP_TARGET=/uploads
