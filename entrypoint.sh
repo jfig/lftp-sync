@@ -1,7 +1,11 @@
-
-if [ $DIRECTION = download -o ${DIRECTION} = d ]
+if [ ${#DIRECTION} -gt 0 ]
 then
-  direction=""
+  if [ $DIRECTION = download -o ${DIRECTION} = d ]
+  then
+    direction=""
+  else
+    direction=" --reverse "
+  fi
 else
   direction=" --reverse "
 fi
